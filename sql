@@ -1,0 +1,2 @@
+PGPASSWORD=fyxAXYtwoGjUdNijzzCtT1WF91NepYKx pg_dump -h dpg-d37f36ur433s73en5hj0-a.oregon-postgres.render.com -U my_database_2jr2_user  --format=custom --no-acl --no-owner bird_app_db > bird_app_db.sql
+PGPASSWORD=fyxAXYtwoGjUdNijzzCtT1WF91NepYKx pg_restore -h dpg-d37f36ur433s73en5hj0-a.oregon-postgres.render.com -U my_database_2jr2_user --verbose --clean --no-acl --no-owner -d bird_app_db bird_app_db.sql
